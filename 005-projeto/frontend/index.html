@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete Online 🍔</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <div id="login" class="login-container">
+    <div class="login-box">
+      <h1>Login - Lanchonete Online</h1>
+      <form id="loginForm">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Cardápio -->
+  <div id="menu" class="hidden">
+    <header>
+      <h1>🍔 Lanchonete Online</h1>
+      <nav>
+        <button>Home</button>
+        <button>Cardápio</button>
+        <button>Carrinho</button>
+        <button id="logout">Sair</button>
+      </nav>
+    </header>
+
+    <main class="menu">
+      <div class="card">
+        <div class="image"></div>
+        <h2>X-Burger</h2>
+        <p>Pão, carne, queijo e molho especial</p>
+        <span>R$ 15,00</span>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="card">
+        <div class="image"></div>
+        <h2>X-Salada</h2>
+        <p>Pão, carne, queijo, alface, tomate</p>
+        <span>R$ 17,00</span>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="card">
+        <div class="image"></div>
+        <h2>X-Bacon</h2>
+        <p>Pão, carne, queijo e bacon crocante</p>
+        <span>R$ 18,00</span>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="card">
+        <div class="image"></div>
+        <h2>Combo Família</h2>
+        <p>2 lanches + batata + refrigerante</p>
+        <span>R$ 39,90</span>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="card">
+        <div class="image"></div>
+        <h2>Batata Frita</h2>
+        <p>Batata crocante com sal a gosto</p>
+        <span>R$ 10,00</span>
+        <button>Adicionar ao carrinho</button>
+      </div>
+      <div class="card">
+        <div class="image"></div>
+        <h2>Refrigerante</h2>
+        <p>Lata 350ml, vários sabores</p>
+        <span>R$ 6,00</span>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </main>
+
+    <footer>
+      © 2025 Lanchonete Online — Desenvolvido por Equipe Web I
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
