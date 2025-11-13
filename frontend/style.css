@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff7ed;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* ===== LOGIN ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  animation: slideIn 0.5s ease;
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #ea580c;
+  margin-bottom: 1.5rem;
+}
+
+.login-box label {
+  display: block;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #f97316;
+}
+
+.login-box button {
+  width: 100%;
+  background: #f97316;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background: #ea580c;
+}
+
+/* ===== CARDÁPIO ===== */
+header {
+  background: #f97316;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+nav button:hover {
+  opacity: 0.8;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .image {
+  background: #fed7aa;
+  height: 150px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  color: #ea580c;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.card button {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: #ea580c;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 14px;
+  color: #666;
+  background: #f5f5f5;
+  margin-top: 2rem;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== OCULTAR/EXIBIR ===== */
+.hidden {
+  display: none;
+}
